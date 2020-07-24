@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <title>Markup with blocks of text</title>
 </head>
+
+<!--there is a requirement such as use only h1, h2, h3, p, pre, code, ul, li tags-->
 
 <body>
     <h1>HOW-TO: Программа на Python, Часть 1</h1>
@@ -39,12 +41,10 @@
     <pre>
     </pre>
 
-    <code>
-        <pre>#!/usr/bin/env python
+    <pre><code>#!/usr/bin/env python
 print 'Hello. I am a python program.'
 name = raw_input("What is your name?")
-print "Hello there, " + name + "!"</pre>
-    </code>
+print "Hello there, " + name + "!"</code></pre>
 
     <p>
         Это всё. Сохраните файл как hello.py в любом месте. Я предлагаю сохранить его в папке python_examples в домашнем каталоге. Этот пример показывает, как просто написать программу на Python. Для запуска программы нужно сделать её файл исполняемым. Для этого
@@ -58,13 +58,11 @@ print "Hello there, " + name + "!"</pre>
     <pre>
     </pre>
 
-    <code>
-        <pre>greg@earth:~/python_examples$ ./hello.py
+    <pre><code>greg@earth:~/python_examples$ ./hello.py
 Hello. I am a python program.
 What is your name? Ferd Burphel
 Hello there, Ferd Burphel! 
-greg@earth:~/python_examples$</pre>
-    </code>
+greg@earth:~/python_examples$</code></pre>
 
     <p>Вот и всё. </p>
 
@@ -77,11 +75,9 @@ greg@earth:~/python_examples$</pre>
     <pre>
     </pre>
 
-    <code>
-        <pre>#!/usr/bin/env python 
+    <pre><code>#!/usr/bin/env python 
 for cntr in range(0,10): 
-    print cntr</pre>
-    </code>
+    print cntr</code></pre>
 
     <p>
         Не забудьте поставить символ табуляции перед строкой «print cntr». Это важно. В Python для указания на блоки кода используются не круглые «(» и фигурные «{» скобки как в других языках программирования, а отступы.
