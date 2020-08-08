@@ -15,7 +15,8 @@
         <fieldset>
             <legend>Личные данные</legend>
             <input type="text" id="surname" required autofocus name="surname" placeholder="Фамилия" pattern="[А-Яа-я]{1,25}">
-            <label for="surname">text: Только кирилица, без пробелов, длина поля 25, обязательное поле, автофокус на данном поле)</label>
+            <label for="surname">text: Только кирилица, без пробелов, длина поля 25, обязательное поле, автофокус на
+                данном поле)</label>
             <br>
             <input type="text" required name="name" placeholder="Имя" id="name" pattern="[А-Яа-я]{1,20}">
             <label for="name">text: Только кирилица, без пробелов, длина поля 20, обязательное поле)</label>
@@ -25,9 +26,11 @@
 
             <fieldset>
                 <legend>Паспортные данные</legend>
-                <label for="range">text: Серия только заглавные две латинские буквы с длиной 2 и максимальным количеством символов 2, количество букв не менее 2, обязательное поле</label>
+                <label for="range">text: Серия только заглавные две латинские буквы с длиной 2 и максимальным
+                    количеством символов 2, количество букв не менее 2, обязательное поле</label>
                 <br>
-                <label for="numberOfPasport">text: Номер паспорта - только цифры с длинной 7 и максимальным количеством символов 7, количество цифр не менее 7, обязательное поле</label>
+                <label for="numberOfPasport">text: Номер паспорта - только цифры с длинной 7 и максимальным количеством
+                    символов 7, количество цифр не менее 7, обязательное поле</label>
                 <br>
                 <input type="text" required id="range" placeholder="АА" pattern="[A-Z]{2}">
                 <input type="text" required id="numberOfPasport" placeholder="1234567" pattern="[0-9]{7}">
@@ -109,15 +112,18 @@
         <fieldset>
             <legend>Данные для входа и восстановления пароля</legend>
             <input type="text" name="login" id="login" placeholder="Логин" required pattern="[A-Za-z]{5,20}">
-            <label for="login">text: Только латиница, без пробелов, не менее 5 символов, длина поля 20, обязательное поле</label>
+            <label for="login">text: Только латиница, без пробелов, не менее 5 символов, длина поля 20, обязательное
+                поле</label>
             <br>
             <input type="password" name="password" id="password" required autocomplete="off" pattern="[A-Za-z]{10,20}">
-            <label for="password">password: Только латиница, без пробелов, не менее 10 символов, длина поля 20, обязательное поле, отключить автозаполнение</label>
+            <label for="password">password: Только латиница, без пробелов, не менее 10 символов, длина поля 20,
+                обязательное поле, отключить автозаполнение</label>
         </fieldset>
         <fieldset>
             <legend>Координаты</legend>
             <input type="email" placeholder="введите адрес электронной почты" name="email" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})">
-            <label for="email">email: проверка должна осуществляться при помощи новых атрибутовтега &lt;input&gt;)</label>
+            <label for="email">email: проверка должна осуществляться при помощи новых атрибутовтега
+                &lt;input&gt;)</label>
             <br>
             <input type="url" placeholder="введите адрес сайта" name="url" pattern="(https|http)://.*">
             <label for="url">url: проверка должна осуществляться при помощи новых атрибутовтега &lt;input&gt;</label>
@@ -135,10 +141,8 @@
             <input type="submit" value="Отправить">
             <input type="reset" value="Сбросить">
             <br>
-            <button type="button">
-                <img src="images/icons8-important-mail-50.png">
-            </button>
-            <label>- при нажатии на эту кнопку ничего не происходит</label>
+            <span>- при нажатии на эту кнопку ничего не происходит</span>
+            <input type="image" src="images/email.jpg" align="left" disabled>
         </fieldset>
     </form>
 </body>
