@@ -142,7 +142,7 @@
                                 <option value="grodno">Гродно</option>
                             </select>
 
-                            <select name="belarusAndRussia" size="8">
+                            <select name="belarusAndRussia[]" size="8" multiple>
                                 <optgroup label="Города РБ">
                                     <option value="Brest">Брест</option>
                                     <option value="Minsk">Минск</option>
@@ -166,12 +166,12 @@
 
             <tr>
                 <td valign="top">
-                    <form action="http://fe.it-academy.by/TestForm.php" method="POST" name="seventhForm" enctype="multipart/form-data">
+                    <form action="http://fe.it-academy.by/TestForm.php" method="GET" name="seventhForm" enctype="multipart/form-data">
                         <fieldset>
                             <legend>Upload</legend>
                             <span>Файл: </span>
                             <br>
-                            <input type="file" name="file">
+                            <input type="file" name="file[]" multiple>
                             <br>
                             <span>Срок хранения: </span>
                             <br>
