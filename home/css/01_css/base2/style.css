@@ -1,0 +1,26 @@
+header {
+    text-align: right;
+}
+
+h1 {
+    font-size: medium;
+}
+
+address {
+    font-weight: lighter;
+}
+
+h3 {
+    text-decoration: underline;
+    font-family: 'Bad Script', cursive;
+    word-spacing: 3px;
+}
+
+article {
+    font-family: 'Bad Script', cursive;
+}
+
+article p,
+h3 {
+    text-indent: 20px;
+}
