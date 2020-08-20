@@ -10,7 +10,7 @@ header address {
     font-weight: lighter;
 }
 
-h3 {
+body h3 {
     text-decoration: underline;
     font-family: 'Bad Script', cursive;
     word-spacing: 3px;
