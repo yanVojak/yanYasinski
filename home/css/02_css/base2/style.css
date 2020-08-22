@@ -1,0 +1,20 @@
+.firstList {
+    list-style-type: upper-roman;
+}
+
+li {
+    list-style-type: lower-roman;
+}
+
+.list {
+    width: 350px;
+}
+
+.code {
+    background-color: black;
+    color: green;
+    width: 400px;
+    overflow: auto;
+    max-height: 74px;
+    padding: 0;
+}

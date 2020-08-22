@@ -1,0 +1,29 @@
+.first {
+    width: 57px;
+    height: 78px;
+    background-image: url('images/cards.png');
+    background-position: 175px -83px;
+    display: inline-block;
+    margin-right: -19px;
+}
+
+.second {
+    width: 57px;
+    height: 78px;
+    background-image: url(images/cards.png);
+    background-position: 292px -247px;
+    display: inline-block;
+    margin-right: -19px;
+}
+
+.third {
+    width: 57px;
+    height: 78px;
+    background-image: url(images/cards.png);
+    background-position: 351px -575px;
+    display: inline-block;
+}
+
+.wrapper {
+    text-align: center;
+}
