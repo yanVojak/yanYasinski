@@ -1,0 +1,29 @@
+ .container {
+     display: flex;
+     flex-wrap: wrap;
+     align-items: flex-start;
+     background-color: rgb(216, 221, 228);
+ }
+ 
+ .wrapper {
+     flex-grow: 1;
+ }
+ 
+ .navigation {
+     background-color: lightgrey;
+     flex-basis: 15em;
+ }
+ 
+ .article {
+     background-color: gray;
+     margin-bottom: .2em;
+ }
+ 
+ .gap {
+     padding-top: 20px;
+ }
+ 
+ footer {
+     background-color: darkgrey;
+     flex-grow: 1;
+ }

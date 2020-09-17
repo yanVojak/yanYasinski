@@ -15,6 +15,10 @@ li {
     color: green;
     width: 400px;
     overflow: auto;
-    max-height: 74px;
+    max-height: 62px;
     padding: 0;
+}
+
+pre {
+    margin: 0;
 }

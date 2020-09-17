@@ -1,0 +1,22 @@
+.wrapper {
+    background-color: lightslategray;
+    padding: 5px;
+}
+
+.navigation {
+    background-color: lightsteelblue;
+    width: 15em;
+    float: left;
+}
+
+.artcile {
+    margin-left: 241px;
+    margin-bottom: .2em;
+    background-color: lightsteelblue;
+    padding-top: 4px;
+    padding-left: 5px;
+}
+
+.foot {
+    background-color: lightsteelblue;
+}

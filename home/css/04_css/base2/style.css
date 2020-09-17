@@ -1,0 +1,27 @@
+table {
+    border-collapse: collapse;
+    caption-side: bottom;
+}
+
+th,
+td {
+    border: 1px dotted black;
+}
+
+tr:not(:nth-child(1)) th {
+    text-align: left;
+}
+
+tr:nth-child(odd) {
+    background-color: lightgray;
+}
+
+tr:nth-child(1) {
+    background-color: gray;
+    color: white;
+}
+
+tr:hover {
+    cursor: pointer;
+    background-color: yellow;
+}

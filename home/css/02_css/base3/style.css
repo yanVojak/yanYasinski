@@ -1,0 +1,25 @@
+p {
+    margin-top: 0;
+}
+
+.navigation {
+    width: 15em;
+    background-color: lightgray;
+    float: left;
+}
+
+.artcile {
+    background-color: gray;
+    margin-bottom: .2em;
+    padding-top: 1px;
+    padding-right: 5px;
+}
+
+.foot {
+    clear: both;
+    background-color: gray;
+}
+
+.wrapper {
+    background-color: lightslategray;
+}

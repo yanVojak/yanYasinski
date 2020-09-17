@@ -1,0 +1,33 @@
+ .wrapper {
+     display: flex;
+     flex-wrap: wrap;
+     align-items: flex-start;
+     background-color: mediumaquamarine;
+ }
+ 
+ .container {
+     flex-grow: 1;
+     margin-top: -19px;
+ }
+ 
+ .navigation {
+     flex-basis: 15em;
+     background-color: mediumpurple;
+     padding-left: 3px;
+ }
+ 
+ .artcile {
+     background-color: mediumpurple;
+     margin-bottom: .2em;
+     margin-left: 3px;
+     padding-left: 3px;
+ }
+ 
+ .foot {
+     flex-grow: 1;
+     background-color: mediumpurple;
+ }
+ 
+ .gap {
+     padding-top: 20px;
+ }
