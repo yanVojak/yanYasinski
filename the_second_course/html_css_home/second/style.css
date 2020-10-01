@@ -1,0 +1,10 @@
+.container {
+    width: 25%;
+}
+
+.item {
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 15px;
+    letter-spacing: .4px;
+}

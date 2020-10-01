@@ -1,0 +1,41 @@
+body {
+    position: relative;
+}
+
+.content {
+    background-color: burlywood;
+    width: 100px;
+    padding: 5px;
+    position: absolute;
+    top: 60px;
+    left: 1130px;
+    margin: 0;
+}
+
+.content a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    width: 100%;
+}
+
+.content li:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+.content li {
+    background-color: chocolate;
+    width: 100%;
+    text-align: center;
+    list-style-type: none;
+}
+
+.content a:hover {
+    cursor: pointer;
+    background-color: darkgray;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}

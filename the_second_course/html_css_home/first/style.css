@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    margin: 5px 0;
+    background-color: rgba(48, 48, 56, 0.2);
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+.wrapper {
+    width: 15%;
+    display: inline-block;
+    position: relative;
+}
+
+.wrap {
+    width: 85%;
+}
+
+.wrap>div:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+.wrapper>div:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+.name {
+    width: 100px;
+    padding: 5px;
+    text-align: center;
+    background-color: rgba(150, 150, 200, 0.1);
+    box-shadow: 75px 0 100px red, -130px 0 100px;
+    height: 60px;
+    position: relative;
+    left: 45px;
+    line-height: 50px;
+    vertical-align: middle;
+}
+
+.description {
+    padding: 5px;
+    text-align: left;
+    height: 60px;
+    background-color: rgba(50, 50, 10, .2);
+    box-shadow: 0 0 12px, 130px 0 100px;
+    overflow: auto;
+}
