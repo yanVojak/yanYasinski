@@ -1,14 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     position: relative;
+    margin: 0;
+}
+
+h1 {
+    margin-top: 30px;
+}
+
+ul {
+    padding: 0;
 }
 
 .content {
+    width: 100%;
+    display: flex;
     background-color: burlywood;
-    width: 100px;
-    padding: 5px;
-    position: absolute;
-    top: 60px;
-    left: 1130px;
+    position: fixed;
+    top: 0;
     margin: 0;
 }
 
@@ -19,12 +31,7 @@ body {
     width: 100%;
 }
 
-.content li:not(:last-child) {
-    margin-bottom: 5px;
-}
-
 .content li {
-    background-color: chocolate;
     width: 100%;
     text-align: center;
     list-style-type: none;
@@ -38,4 +45,7 @@ body {
 a {
     text-decoration: none;
     color: black;
+    height: 30px;
+    line-height: 30px;
+    vertical-align: middle;
 }

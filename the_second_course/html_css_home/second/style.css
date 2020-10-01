@@ -1,5 +1,10 @@
 .container {
-    width: 25%;
+    width: 234px;
+    padding: 10px;
+}
+
+body {
+    margin: 0;
 }
 
 .item {
@@ -7,4 +12,7 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-bottom: 15px;
     letter-spacing: .4px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    padding: 4px;
 }
