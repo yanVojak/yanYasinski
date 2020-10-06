@@ -1,18 +1,21 @@
+body {
+    margin: 0;
+}
+
 .container {
     width: 234px;
     padding: 10px;
-}
-
-body {
-    margin: 0;
 }
 
 .item {
     font-size: 14px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-bottom: 15px;
-    letter-spacing: .4px;
     font-family: 'Raleway', sans-serif;
     font-weight: 200;
     padding: 4px;
+}
+
+p {
+    margin: 0;
 }
