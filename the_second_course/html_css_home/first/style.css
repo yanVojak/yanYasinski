@@ -14,7 +14,7 @@ body {
 }
 
 .wrapper {
-    width: 200px;
+    flex-basis: 200px;
     position: relative;
 }
 
@@ -59,5 +59,6 @@ body {
     }
     .name {
         line-height: 90px;
+        width: 80px;
     }
 }
