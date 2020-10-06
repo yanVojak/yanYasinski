@@ -3,7 +3,6 @@
 }
 
 body {
-    margin: 0;
     margin: 5px 0;
     background-color: rgba(48, 48, 56, 0.2);
 }
@@ -15,8 +14,7 @@ body {
 }
 
 .wrapper {
-    width: 15%;
-    display: inline-block;
+    width: 200px;
     position: relative;
 }
 
@@ -24,32 +22,42 @@ body {
     width: 85%;
 }
 
-.wrap>div:not(:last-child) {
-    margin-bottom: 12px;
-}
-
+.wrap>div:not(:last-child),
 .wrapper>div:not(:last-child) {
     margin-bottom: 12px;
 }
 
 .name {
     width: 100px;
+    height: 70px;
     padding: 5px;
     text-align: center;
-    background-color: rgba(150, 150, 200, 0.1);
-    box-shadow: 75px 0 100px red, -130px 0 100px;
-    height: 60px;
+    background: rgb(229, 230, 237);
+    background: linear-gradient(180deg, rgba(229, 230, 237, 1) 0%, rgba(237, 247, 218, 1) 50%, rgba(251, 222, 222, 1) 100%);
+    box-shadow: 75px 0 100px #EFCCBD, -130px 0 100px #D8C4C4;
     position: relative;
     left: 45px;
     line-height: 50px;
+    /* for valign */
     vertical-align: middle;
 }
 
 .description {
     padding: 5px;
     text-align: left;
-    height: 60px;
-    background-color: rgba(50, 50, 10, .2);
-    box-shadow: 0 0 12px, 130px 0 100px;
+    height: 70px;
+    background: rgb(94, 250, 110);
+    background: linear-gradient(180deg, rgba(94, 250, 110, 1) 0%, rgba(162, 252, 143, 1) 50%, rgba(238, 252, 182, 1) 100%);
+    box-shadow: 0 0 12px, 130px 0 100px #655B56;
     overflow: auto;
+}
+
+@media all and (max-width:610px) {
+    .name,
+    .description {
+        height: 100px;
+    }
+    .name {
+        line-height: 90px;
+    }
 }
