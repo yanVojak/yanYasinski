@@ -26,7 +26,7 @@
             <div class="name">ins</div>
             <div class="name">del</div>
             <div class="name">address</div>
-            <div class="name">nobr</div>
+            <div class="name">white-space</div>
             <div class="name">wbr</div>
         </div>
         <div class="wrap">
@@ -127,7 +127,9 @@ wrote
                 </p>
             </div>
             <div class="example">
-                <tt>Lorem</tt> ipsum dolor sit amet consectetur adipisicing elit. <tt>Blanditiis</tt> cum aperiam error eum placeat dolorem ducimus, <tt>voluptate accusantium sed ullam nesciunt ratione.</tt>
+                <p style="margin: 0;">
+                    <tt>Lorem</tt> ipsum dolor sit amet consectetur adipisicing elit. <tt>Blanditiis</tt> cum aperiam error eum placeat dolorem ducimus, <tt>voluptate accusantium sed ullam nesciunt ratione.</tt>
+                </p>
             </div>
             <div class="example">Please press <kbd style="font-size: x-large;">Enter</kbd> to continue...</div>
             <div class="example">
@@ -168,13 +170,13 @@ wrote
             <div class="example">
                 <p style="margin: 0;">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ratione
-                    <nobr style="background-color: greenyellow;"> soluta nesciunt consequatur facere, est odio doloribus ad tempore,</nobr> eveniet dolorum modi aliquid repellendus incidunt vel? Porro sunt quos laborum.
+                    <span style="background-color: greenyellow; white-space: nowrap;"> soluta nesciunt consequatur facere, est odio</span> doloribus ad tempore, eveniet dolorum modi aliquid repellendus incidunt vel? Porro sunt quos laborum.
                 </p>
             </div>
             <div class="example">
                 <p style="margin: 0;">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet tenetur temporibus
-                    <span style="color: red;" ">В ЭТОМ МЕСТЕ ПЕРЕНОС ВОЗМОЖЕН</span> <wbr> impedit pariatur sunt obcaecati ducimus provident, nulla nesciunt ratione fugiat ea alias perspiciatis in dolorum voluptatum numquam, rerum hic.
+                    <span style="color: red;">В ЭТОМ МЕСТЕ ПЕРЕНОС ВОЗМОЖЕН</span> <wbr> impedit pariatur sunt obcaecati ducimus provident, nulla nesciunt ratione fugiat ea alias perspiciatis in dolorum voluptatum numquam, rerum hic.
                 </p>
             </div>
         </div>
