@@ -2,42 +2,50 @@
     box-sizing: border-box;
 }
 
+*::selection {
+    background-color: rgb(66, 164, 194);
+}
+
 body {
     margin: 5px 0;
     background-color: rgba(48, 48, 56, 0.2);
+    height: 3000px;
 }
 
 .container {
     display: flex;
-    width: 80%;
-    margin: auto;
 }
 
 .wrapper {
-    flex-basis: 200px;
     position: relative;
+    margin-right: 5px;
+    width: 100px;
 }
 
 .wrap {
-    width: 85%;
+    width: 45%;
+    margin: 0 3px 0 0;
+}
+
+.examples {
+    width: 47%;
 }
 
 .wrap>div:not(:last-child),
-.wrapper>div:not(:last-child) {
+.wrapper>div:not(:last-child),
+.examples>div:not(:last-child) {
     margin-bottom: 12px;
 }
 
 .name {
     width: 100px;
-    height: 70px;
+    height: 100px;
     padding: 5px;
     text-align: center;
     background: rgb(229, 230, 237);
     background: linear-gradient(180deg, rgba(229, 230, 237, 1) 0%, rgba(237, 247, 218, 1) 50%, rgba(251, 222, 222, 1) 100%);
     box-shadow: 75px 0 100px #EFCCBD, -130px 0 100px #D8C4C4;
-    position: relative;
-    left: 45px;
-    line-height: 50px;
+    line-height: 90px;
     /* for valign */
     vertical-align: middle;
 }
@@ -45,20 +53,41 @@ body {
 .description {
     padding: 5px;
     text-align: left;
-    height: 70px;
+    height: 100px;
     background: rgb(94, 250, 110);
     background: linear-gradient(180deg, rgba(94, 250, 110, 1) 0%, rgba(162, 252, 143, 1) 50%, rgba(238, 252, 182, 1) 100%);
-    box-shadow: 0 0 12px, 130px 0 100px #655B56;
+    box-shadow: 0 0 5px, 130px 0 100px #655B56;
     overflow: auto;
+}
+
+.example {
+    padding: 5px;
+    text-align: left;
+    height: 100px;
+    background: rgb(94, 250, 110);
+    background: linear-gradient(180deg, rgba(94, 250, 110, .1) 0%, rgba(84, 139, 73, 0.1) 50%, rgba(238, 252, 182, .4) 100%);
+    overflow: auto;
+}
+
+.quote::before {
+    content: '\201C';
+}
+
+.quote::after {
+    content: '\201D';
 }
 
 @media all and (max-width:610px) {
     .name,
-    .description {
-        height: 100px;
+    .description,
+    .example {
+        height: 120px;
     }
     .name {
         line-height: 90px;
-        width: 80px;
+        width: 70px;
+    }
+    .wrapper {
+        margin-right: -6px;
     }
 }
