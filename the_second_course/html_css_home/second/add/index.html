@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>different types of format</title>
+    <style>
+        body {
+            background-color: rgb(226, 172, 172, .4);
+        }
+        
+        h1,
+        h2 {
+            text-align: center;
+            margin: 0;
+        }
+        
+        .special {
+            border-color: transparent;
+            border-radius: 15px;
+            padding: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            background-color: rgb(226, 172, 172, .7);
+        }
+        
+        .special:hover {
+            background-color: rgb(226, 172, 172, .4);
+        }
+        
+        img:hover,
+        .container div:nth-child(2):hover {
+            box-shadow: 0 0 9px 1px rgb(226, 172, 172, .9);
+        }
+        
+        .container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-bottom: 50px;
+        }
+        
+        .changed {
+            background-color: rgba(177, 144, 144, 0.4);
+            font-size: x-large;
+            writing-mode: vertical-lr;
+            padding: 5px;
+            height: 302px;
+            align-self: center;
+            cursor: pointer;
+        }
+        
+        @media all and (max-width: 1260px) {
+            .container {
+                display: block;
+                text-align: center;
+            }
+            .changed {
+                writing-mode: horizontal-tb;
+                height: auto;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Looking for a difference</h1>
+    <p style="font-weight: bolder; text-align: center;">
+        <a class="special">hover on the picture will show size</a>
+    </p>
+    <div class="container">
+        <div>
+            <h2>The first one is .WebP</h1>
+                <img src="http://fe.it-academy.by/Sites/0031666/cat.webp" alt="cat 's on the table" title="26kb">
+                <p style="text-align: center;">
+                    <span style="background-color: red;">not supported</span> by Safari, <span style="background-color: yellow;">WON</span> in the battle between size and quality compared to jpeg or png
+                </p>
+        </div>
+        <div class="changed">
+            the same width, height and size
+        </div>
+        <div>
+            <h2>The second is .jpeg</h1>
+                <img src="http://fe.it-academy.by/Sites/0031666/cat.jpeg" alt="cat's on the table" title="26kb">
+        </div>
+    </div>
+    <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+        <div>
+            <h2>This one has .webp format</h2>
+            <img src="http://fe.it-academy.by/Sites/0031666/skobki2.webp" alt="quotes" title="8kb">
+            <p style="text-align: center; ">
+                .webp <span style="background-color: yellow; ">has won again</span>. 8kb against .png&apos;s 152kb
+            </p>
+        </div>
+        <div>
+            <h2>And this's got .png format</h2>
+            <img src="http://fe.it-academy.by/Sites/0031666/skobki2.png" alt="quotes" title="152kb">
+        </div>
+    </div>
+</body>
+
+</html>
