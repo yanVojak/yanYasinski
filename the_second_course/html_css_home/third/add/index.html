@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>additional task</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Additional tasks (3.1, 3.3)</h1>
+    <div class="firstWrap">
+        <h2>Setting colour via an older tag &quot;font&quot;</h2>
+        <p>Examples (hover on each colours group to see colour):</p>
+        <ul>
+            <li>
+                <p title="colour is #chucknorris">
+                    <font color="#chucknorris">Chuck Norris is very popular actor of 20th century.</font>
+                </p>
+            </li>
+            <li>
+                <p title="colour is #BruceWillis">
+                    <font color="#BruceWillis">I've never seen any films with Bruce Willis, Yes, I'm exist.</font>
+                </p>
+            </li>
+            <li>
+                <p>
+                    <font color="#CANDY" title="colour is #CANDY">There was idea: Why don't we call colour as other word?
+                    </font>
+                    <font color="#chacknorr" title="colour is #chacknorr">Yeah! why not?</font>
+                    <font title="just using tag 'font' without any colors">just for fun <img src="https://img51994.muz1.tv/img/2016-01-18/fmt_89_24_1453143672smajl.jpg" alt="laughly smile" style="height: .8em;"></font>
+                </p>
+            </li>
+        </ul>
+
+        <h2>Why are &quot;chuknorris&quot;, &quot;chuknorr&quot;, &quot;CANDY&quot; or &quot;BruceWillis&quot;? </h2>
+        <p style="margin-bottom: 0;">
+            <span style="font-size: larger; font-weight: bolder;">Answer is simple</span> - we need to change each letter to 16th system count or just change to 0 (if not exist such letter). after that, you need to add zeros to the string until the number
+            of characters divide by three like this &quot;c00c 0000 0000&quot;. As you could guess it's a color model <a href="https://en.wikipedia.org/wiki/RGB_color_model" title="wiki" target="_blank">RGB</a>.
+        </p>
+        <p style="margin: 0;">
+            Tag &quot;font&quot; isn't using in HTML5
+        </p>
+    </div>
+    <div class="secondWrap">
+        <h2>Safe pallete</h2>
+        <p>
+            All systems have what's called a system palette — the basic set of colours that the system can use at the 256-colour level. Sadly, <a href="https://en.wikipedia.org/wiki/Microsoft_Windows" target="_blank"><em>Windows</em></a> and <a href="https://en.wikipedia.org/wiki/MacOS"
+                target="_blank"><em>Mac</em></a> <span style="background-color: #FF0033;">systems don't use the same 256
+                colours</span>, <span style="background-color: #CCCC00;">but there is a cross-over of 216 colours which
+                are in both system palettes</span>. So, when I say the following 216 colours are non-dithering or web-safe, it means <span style="text-decoration: underline;">they will look the exact
+                same on any computer</span>. That's what makes them so useful. You can use them and be guaranteed that a user won't get a horrible looking mess when they load your page. It'll all be smooth colour.
+        </p>
+        <p style="margin-bottom: 0;">
+            Let's look at this palette:
+        </p>
+        <ul class="colors">
+            <li style="background:#FFFFCC"><em><u>255 255 204</u><q>#FFFFCC</q></em></li>
+            <li style="background:#FFFF99"><em><u>255 255 153</u><q>#FFFF99</q></em></li>
+            <li style="background:#FFFF66"><em><u>255 255 102</u><q>#FFFF66</q></em></li>
+            <li style="background:#FFFF33"><em><u>255 255 51</u><q>#FFFF33</q></em></li>
+            <li style="background:#FFFF00"><em><u>255 255 0</u><q>#FFFF00</q></em></li>
+            <li style="background:#CCCC00"><em><u>204 204 0</u><q>#CCCC00</q></em></li>
+            <li style="background:#FFCC66"><em><u>255 204 102</u><q>#FFCC66</q></em></li>
+            <li style="background:#FFCC00"><em><u>255 204 0</u><q>#FFCC00</q></em></li>
+            <li style="background:#FFCC33"><em><u>255 204 51</u><q>#FFCC33</q></em></li>
+            <li style="background:#CC9900"><em><u>204 153 0</u><q>#CC9900</q></em></li>
+            <li style="background:#CC9933"><em><u>204 153 51</u><q>#CC9933</q></em></li>
+            <li style="background:#996600"><em><u>153 102 0</u><q>#996600</q></em></li>
+            <li style="background:#FF9900"><em><u>255 153 0</u><q>#FF9900</q></em></li>
+            <li style="background:#FF9933"><em><u>255 153 51</u><q>#FF9933</q></em></li>
+            <li style="background:#CC9966"><em><u>204 153 102</u><q>#CC9966</q></em></li>
+            <li style="background:#CC6600"><em><u>204 102 0</u><q>#CC6600</q></em></li>
+            <li style="background:#996633"><em><u>153 102 51</u><q>#996633</q></em></li>
+            <li style="background:#663300"><em><u>102 51 0</u><q>#663300</q></em></li>
+            <li style="background:#FFCC99"><em><u>255 204 153</u><q>#FFCC99</q></em></li>
+            <li style="background:#FF9966"><em><u>255 153 102</u><q>#FF9966</q></em></li>
+            <li style="background:#FF6600"><em><u>255 102 0</u><q>#FF6600</q></em></li>
+            <li style="background:#CC6633"><em><u>204 102 51</u><q>#CC6633</q></em></li>
+            <li style="background:#993300"><em><u>153 51 0</u><q>#993300</q></em></li>
+            <li style="background:#660000"><em><u>102 0 0</u><q>#660000</q></em></li>
+            <li style="background:#FF6633"><em><u>255 102 51</u><q>#FF6633</q></em></li>
+            <li style="background:#CC3300"><em><u>204 51 0</u><q>#CC3300</q></em></li>
+            <li style="background:#FF3300"><em><u>255 51 0</u><q>#FF3300</q></em></li>
+            <li style="background:#FF0000"><em><u>255 0 0</u><q>#FF0000</q></em></li>
+            <li style="background:#CC0000"><em><u>204 0 0</u><q>#CC0000</q></em></li>
+            <li style="background:#990000"><em><u>153 0 0</u><q>#990000</q></em></li>
+            <li style="background:#FFCCCC"><em><u>255 204 204</u><q>#FFCCCC</q></em></li>
+            <li style="background:#FF9999"><em><u>255 153 153</u><q>#FF9999</q></em></li>
+            <li style="background:#FF6666"><em><u>255 102 102</u><q>#FF6666</q></em></li>
+            <li style="background:#FF3333"><em><u>255 51 51</u><q>#FF3333</q></em></li>
+            <li style="background:#FF0033"><em><u>255 0 51</u><q>#FF0033</q></em></li>
+            <li style="background:#CC0033"><em><u>204 0 51</u><q>#CC0033</q></em></li>
+            <li style="background:#CC9999"><em><u>204 153 153</u><q>#CC9999</q></em></li>
+            <li style="background:#CC6666"><em><u>204 102 102</u><q>#CC6666</q></em></li>
+            <li style="background:#CC3333"><em><u>204 51 51</u><q>#CC3333</q></em></li>
+            <li style="background:#993333"><em><u>153 51 51</u><q>#993333</q></em></li>
+            <li style="background:#990033"><em><u>153 0 51</u><q>#990033</q></em></li>
+            <li style="background:#330000"><em><u>51 0 0</u><q>#330000</q></em></li>
+            <li style="background:#FF6699"><em><u>255 102 153</u><q>#FF6699</q></em></li>
+            <li style="background:#FF3366"><em><u>255 51 102</u><q>#FF3366</q></em></li>
+            <li style="background:#FF0066"><em><u>255 0 102</u><q>#FF0066</q></em></li>
+            <li style="background:#CC3366"><em><u>204 51 102</u><q>#CC3366</q></em></li>
+            <li style="background:#996666"><em><u>153 102 102</u><q>#996666</q></em></li>
+            <li style="background:#663333"><em><u>102 51 51</u><q>#663333</q></em></li>
+            <li style="background:#FF99CC"><em><u>255 153 204</u><q>#FF99CC</q></em></li>
+            <li style="background:#FF3399"><em><u>255 51 153</u><q>#FF3399</q></em></li>
+            <li style="background:#FF0099"><em><u>255 0 153</u><q>#FF0099</q></em></li>
+            <li style="background:#CC0066"><em><u>204 0 102</u><q>#CC0066</q></em></li>
+            <li style="background:#993366"><em><u>153 51 102</u><q>#993366</q></em></li>
+            <li style="background:#660033"><em><u>102 0 51</u><q>#660033</q></em></li>
+            <li style="background:#FF66CC"><em><u>255 102 204</u><q>#FF66CC</q></em></li>
+            <li style="background:#FF00CC"><em><u>255 0 204</u><q>#FF00CC</q></em></li>
+            <li style="background:#FF33CC"><em><u>255 51 204</u><q>#FF33CC</q></em></li>
+            <li style="background:#CC6699"><em><u>204 102 153</u><q>#CC6699</q></em></li>
+            <li style="background:#CC0099"><em><u>204 0 153</u><q>#CC0099</q></em></li>
+            <li style="background:#990066"><em><u>153 0 102</u><q>#990066</q></em></li>
+            <li style="background:#FFCCFF"><em><u>255 204 255</u><q>#FFCCFF</q></em></li>
+            <li style="background:#FF99FF"><em><u>255 153 255</u><q>#FF99FF</q></em></li>
+            <li style="background:#FF66FF"><em><u>255 102 255</u><q>#FF66FF</q></em></li>
+            <li style="background:#FF33FF"><em><u>255 51 255</u><q>#FF33FF</q></em></li>
+            <li style="background:#FF00FF"><em><u>255 0 255</u><q>#FF00FF</q></em></li>
+            <li style="background:#CC3399"><em><u>204 51 153</u><q>#CC3399</q></em></li>
+            <li style="background:#CC99CC"><em><u>204 153 204</u><q>#CC99CC</q></em></li>
+            <li style="background:#CC66CC"><em><u>204 102 204</u><q>#CC66CC</q></em></li>
+            <li style="background:#CC00CC"><em><u>204 0 204</u><q>#CC00CC</q></em></li>
+            <li style="background:#CC33CC"><em><u>204 51 204</u><q>#CC33CC</q></em></li>
+            <li style="background:#990099"><em><u>153 0 153</u><q>#990099</q></em></li>
+            <li style="background:#993399"><em><u>153 51 153</u><q>#993399</q></em></li>
+            <li style="background:#CC66FF"><em><u>204 102 255</u><q>#CC66FF</q></em></li>
+            <li style="background:#CC33FF"><em><u>204 51 255</u><q>#CC33FF</q></em></li>
+            <li style="background:#CC00FF"><em><u>204 0 255</u><q>#CC00FF</q></em></li>
+            <li style="background:#9900CC"><em><u>153 0 204</u><q>#9900CC</q></em></li>
+            <li style="background:#996699"><em><u>153 102 153</u><q>#996699</q></em></li>
+            <li style="background:#660066"><em><u>102 0 102</u><q>#660066</q></em></li>
+            <li style="background:#CC99FF"><em><u>204 153 255</u><q>#CC99FF</q></em></li>
+            <li style="background:#9933CC"><em><u>153 51 204</u><q>#9933CC</q></em></li>
+            <li style="background:#9933FF"><em><u>153 51 255</u><q>#9933FF</q></em></li>
+            <li style="background:#9900FF"><em><u>153 0 255</u><q>#9900FF</q></em></li>
+            <li style="background:#660099"><em><u>102 0 153</u><q>#660099</q></em></li>
+            <li style="background:#663366"><em><u>102 51 102</u><q>#663366</q></em></li>
+            <li style="background:#9966CC"><em><u>153 102 204</u><q>#9966CC</q></em></li>
+            <li style="background:#9966FF"><em><u>153 102 255</u><q>#9966FF</q></em></li>
+            <li style="background:#6600CC"><em><u>102 0 204</u><q>#6600CC</q></em></li>
+            <li style="background:#6633CC"><em><u>102 51 204</u><q>#6633CC</q></em></li>
+            <li style="background:#663399"><em><u>102 51 153</u><q>#663399</q></em></li>
+            <li style="background:#330033"><em><u>51 0 51</u><q>#330033</q></em></li>
+            <li style="background:#CCCCFF"><em><u>204 204 255</u><q>#CCCCFF</q></em></li>
+            <li style="background:#9999FF"><em><u>153 153 255</u><q>#9999FF</q></em></li>
+            <li style="background:#6633FF"><em><u>102 51 255</u><q>#6633FF</q></em></li>
+            <li style="background:#6600FF"><em><u>102 0 255</u><q>#6600FF</q></em></li>
+            <li style="background:#330099"><em><u>51 0 153</u><q>#330099</q></em></li>
+            <li style="background:#330066"><em><u>51 0 102</u><q>#330066</q></em></li>
+            <li style="background:#9999CC"><em><u>153 153 204</u><q>#9999CC</q></em></li>
+            <li style="background:#6666FF"><em><u>102 102 255</u><q>#6666FF</q></em></li>
+            <li style="background:#6666CC"><em><u>102 102 204</u><q>#6666CC</q></em></li>
+            <li style="background:#666699"><em><u>102 102 153</u><q>#666699</q></em></li>
+            <li style="background:#333399"><em><u>51 51 153</u><q>#333399</q></em></li>
+            <li style="background:#333366"><em><u>51 51 102</u><q>#333366</q></em></li>
+            <li style="background:#3333FF"><em><u>51 51 255</u><q>#3333FF</q></em></li>
+            <li style="background:#3300FF"><em><u>51 0 255</u><q>#3300FF</q></em></li>
+            <li style="background:#3300CC"><em><u>51 0 204</u><q>#3300CC</q></em></li>
+            <li style="background:#3333CC"><em><u>51 51 204</u><q>#3333CC</q></em></li>
+            <li style="background:#000099"><em><u>0 0 153</u><q>#000099</q></em></li>
+            <li style="background:#000066"><em><u>0 0 102</u><q>#000066</q></em></li>
+            <li style="background:#6699FF"><em><u>102 153 255</u><q>#6699FF</q></em></li>
+            <li style="background:#3366FF"><em><u>51 102 255</u><q>#3366FF</q></em></li>
+            <li style="background:#0000FF"><em><u>0 0 255</u><q>#0000FF</q></em></li>
+            <li style="background:#0000CC"><em><u>0 0 204</u><q>#0000CC</q></em></li>
+            <li style="background:#0033CC"><em><u>0 51 204</u><q>#0033CC</q></em></li>
+            <li style="background:#000033"><em><u>0 0 51</u><q>#000033</q></em></li>
+            <li style="background:#0066FF"><em><u>0 102 255</u><q>#0066FF</q></em></li>
+            <li style="background:#0066CC"><em><u>0 102 204</u><q>#0066CC</q></em></li>
+            <li style="background:#3366CC"><em><u>51 102 204</u><q>#3366CC</q></em></li>
+            <li style="background:#0033FF"><em><u>0 51 255</u><q>#0033FF</q></em></li>
+            <li style="background:#003399"><em><u>0 51 153</u><q>#003399</q></em></li>
+            <li style="background:#003366"><em><u>0 51 102</u><q>#003366</q></em></li>
+            <li style="background:#99CCFF"><em><u>153 204 255</u><q>#99CCFF</q></em></li>
+            <li style="background:#3399FF"><em><u>51 153 255</u><q>#3399FF</q></em></li>
+            <li style="background:#0099FF"><em><u>0 153 255</u><q>#0099FF</q></em></li>
+            <li style="background:#6699CC"><em><u>102 153 204</u><q>#6699CC</q></em></li>
+            <li style="background:#336699"><em><u>51 102 153</u><q>#336699</q></em></li>
+            <li style="background:#006699"><em><u>0 102 153</u><q>#006699</q></em></li>
+            <li style="background:#66CCFF"><em><u>102 204 255</u><q>#66CCFF</q></em></li>
+            <li style="background:#33CCFF"><em><u>51 204 255</u><q>#33CCFF</q></em></li>
+            <li style="background:#00CCFF"><em><u>0 204 255</u><q>#00CCFF</q></em></li>
+            <li style="background:#3399CC"><em><u>51 153 204</u><q>#3399CC</q></em></li>
+            <li style="background:#0099CC"><em><u>0 153 204</u><q>#0099CC</q></em></li>
+            <li style="background:#003333"><em><u>0 51 51</u><q>#003333</q></em></li>
+            <li style="background:#99CCCC"><em><u>153 204 204</u><q>#99CCCC</q></em></li>
+            <li style="background:#66CCCC"><em><u>102 204 204</u><q>#66CCCC</q></em></li>
+            <li style="background:#339999"><em><u>51 153 153</u><q>#339999</q></em></li>
+            <li style="background:#669999"><em><u>102 153 153</u><q>#669999</q></em></li>
+            <li style="background:#006666"><em><u>0 102 102</u><q>#006666</q></em></li>
+            <li style="background:#336666"><em><u>51 102 102</u><q>#336666</q></em></li>
+            <li style="background:#CCFFFF"><em><u>204 255 255</u><q>#CCFFFF</q></em></li>
+            <li style="background:#99FFFF"><em><u>153 255 255</u><q>#99FFFF</q></em></li>
+            <li style="background:#66FFFF"><em><u>102 255 255</u><q>#66FFFF</q></em></li>
+            <li style="background:#33FFFF"><em><u>51 255 255</u><q>#33FFFF</q></em></li>
+            <li style="background:#00FFFF"><em><u>0 255 255</u><q>#00FFFF</q></em></li>
+            <li style="background:#00CCCC"><em><u>0 204 204</u><q>#00CCCC</q></em></li>
+            <li style="background:#99FFCC"><em><u>153 255 204</u><q>#99FFCC</q></em></li>
+            <li style="background:#66FFCC"><em><u>102 255 204</u><q>#66FFCC</q></em></li>
+            <li style="background:#33FFCC"><em><u>51 255 204</u><q>#33FFCC</q></em></li>
+            <li style="background:#00FFCC"><em><u>0 255 204</u><q>#00FFCC</q></em></li>
+            <li style="background:#33CCCC"><em><u>51 204 204</u><q>#33CCCC</q></em></li>
+            <li style="background:#009999"><em><u>0 153 153</u><q>#009999</q></em></li>
+            <li style="background:#66CC99"><em><u>102 204 153</u><q>#66CC99</q></em></li>
+            <li style="background:#33CC99"><em><u>51 204 153</u><q>#33CC99</q></em></li>
+            <li style="background:#00CC99"><em><u>0 204 153</u><q>#00CC99</q></em></li>
+            <li style="background:#339966"><em><u>51 153 102</u><q>#339966</q></em></li>
+            <li style="background:#009966"><em><u>0 153 102</u><q>#009966</q></em></li>
+            <li style="background:#006633"><em><u>0 102 51</u><q>#006633</q></em></li>
+            <li style="background:#66FF99"><em><u>102 255 153</u><q>#66FF99</q></em></li>
+            <li style="background:#33FF99"><em><u>51 255 153</u><q>#33FF99</q></em></li>
+            <li style="background:#00FF99"><em><u>0 255 153</u><q>#00FF99</q></em></li>
+            <li style="background:#33CC66"><em><u>51 204 102</u><q>#33CC66</q></em></li>
+            <li style="background:#00CC66"><em><u>0 204 102</u><q>#00CC66</q></em></li>
+            <li style="background:#009933"><em><u>0 153 51</u><q>#009933</q></em></li>
+            <li style="background:#99FF99"><em><u>153 255 153</u><q>#99FF99</q></em></li>
+            <li style="background:#66FF66"><em><u>102 255 102</u><q>#66FF66</q></em></li>
+            <li style="background:#33FF66"><em><u>51 255 102</u><q>#33FF66</q></em></li>
+            <li style="background:#00FF66"><em><u>0 255 102</u><q>#00FF66</q></em></li>
+            <li style="background:#339933"><em><u>51 153 51</u><q>#339933</q></em></li>
+            <li style="background:#006600"><em><u>0 102 0</u><q>#006600</q></em></li>
+            <li style="background:#CCFFCC"><em><u>204 255 204</u><q>#CCFFCC</q></em></li>
+            <li style="background:#99CC99"><em><u>153 204 153</u><q>#99CC99</q></em></li>
+            <li style="background:#66CC66"><em><u>102 204 102</u><q>#66CC66</q></em></li>
+            <li style="background:#669966"><em><u>102 153 102</u><q>#669966</q></em></li>
+            <li style="background:#336633"><em><u>51 102 51</u><q>#336633</q></em></li>
+            <li style="background:#003300"><em><u>0 51 0</u><q>#003300</q></em></li>
+            <li style="background:#33FF33"><em><u>51 255 51</u><q>#33FF33</q></em></li>
+            <li style="background:#00FF33"><em><u>0 255 51</u><q>#00FF33</q></em></li>
+            <li style="background:#00FF00"><em><u>0 255 0</u><q>#00FF00</q></em></li>
+            <li style="background:#00CC00"><em><u>0 204 0</u><q>#00CC00</q></em></li>
+            <li style="background:#33CC33"><em><u>51 204 51</u><q>#33CC33</q></em></li>
+            <li style="background:#00CC33"><em><u>0 204 51</u><q>#00CC33</q></em></li>
+            <li style="background:#66FF00"><em><u>102 255 0</u><q>#66FF00</q></em></li>
+            <li style="background:#66FF33"><em><u>102 255 51</u><q>#66FF33</q></em></li>
+            <li style="background:#33FF00"><em><u>51 255 0</u><q>#33FF00</q></em></li>
+            <li style="background:#33CC00"><em><u>51 204 0</u><q>#33CC00</q></em></li>
+            <li style="background:#339900"><em><u>51 153 0</u><q>#339900</q></em></li>
+            <li style="background:#009900"><em><u>0 153 0</u><q>#009900</q></em></li>
+            <li style="background:#CCFF99"><em><u>204 255 153</u><q>#CCFF99</q></em></li>
+            <li style="background:#99FF66"><em><u>153 255 102</u><q>#99FF66</q></em></li>
+            <li style="background:#66CC00"><em><u>102 204 0</u><q>#66CC00</q></em></li>
+            <li style="background:#66CC33"><em><u>102 204 51</u><q>#66CC33</q></em></li>
+            <li style="background:#669933"><em><u>102 153 51</u><q>#669933</q></em></li>
+            <li style="background:#336600"><em><u>51 102 0</u><q>#336600</q></em></li>
+            <li style="background:#99FF00"><em><u>153 255 0</u><q>#99FF00</q></em></li>
+            <li style="background:#99FF33"><em><u>153 255 51</u><q>#99FF33</q></em></li>
+            <li style="background:#99CC66"><em><u>153 204 102</u><q>#99CC66</q></em></li>
+            <li style="background:#99CC00"><em><u>153 204 0</u><q>#99CC00</q></em></li>
+            <li style="background:#99CC33"><em><u>153 204 51</u><q>#99CC33</q></em></li>
+            <li style="background:#669900"><em><u>102 153 0</u><q>#669900</q></em></li>
+            <li style="background:#CCFF66"><em><u>204 255 102</u><q>#CCFF66</q></em></li>
+            <li style="background:#CCFF00"><em><u>204 255 0</u><q>#CCFF00</q></em></li>
+            <li style="background:#CCFF33"><em><u>204 255 51</u><q>#CCFF33</q></em></li>
+            <li style="background:#CCCC99"><em><u>204 204 153</u><q>#CCCC99</q></em></li>
+            <li style="background:#666633"><em><u>102 102 51</u><q>#666633</q></em></li>
+            <li style="background:#333300"><em><u>51 51 0</u><q>#333300</q></em></li>
+            <li style="background:#CCCC66"><em><u>204 204 102</u><q>#CCCC66</q></em></li>
+            <li style="background:#CCCC33"><em><u>204 204 51</u><q>#CCCC33</q></em></li>
+            <li style="background:#999966"><em><u>153 153 102</u><q>#999966</q></em></li>
+            <li style="background:#999933"><em><u>153 153 51</u><q>#999933</q></em></li>
+            <li style="background:#999900"><em><u>153 153 0</u><q>#999900</q></em></li>
+            <li style="background:#666600"><em><u>102 102 0</u><q>#666600</q></em></li>
+            <li style="background:#FFFFFF"><em><u>255 255 255</u><q>#FFFFFF</q></em></li>
+            <li style="background:#CCCCCC"><em><u>204 204 204</u><q>#CCCCCC</q></em></li>
+            <li style="background:#999999"><em><u>153 153 153</u><q>#999999</q></em></li>
+            <li style="background:#666666"><em><u>102 102 102</u><q>#666666</q></em></li>
+            <li style="background:#333333"><em><u>51 51 51</u><q>#333333</q></em></li>
+            <li style="background:#000000"><em><u>0 0 0</u><q>#000000</q></em></li>
+        </ul>
+    </div>
+</body>
+
+</html>
