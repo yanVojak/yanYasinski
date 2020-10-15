@@ -6,57 +6,67 @@ h1 {
     text-align: center;
 }
 
-.firstWrap>p:last-child {
-    text-align: right;
-    opacity: .5;
-    color: red;
+ul {
+    list-style-type: square;
 }
 
-.colors p {
+.under p:nth-child(3) {
     margin: 0;
+    text-align: right;
+    color: #FF6666;
+    opacity: .6;
 }
 
-.colors {
+.container {
+    display: flex;
+}
+
+.secondWrap {
+    width: 720px;
+    margin-left: 10px;
+}
+
+.under {
+    align-self: flex-end;
+}
+
+
+/*                                  DIVS */
+
+.wraap {
+    width: inherit;
     display: flex;
     flex-wrap: wrap;
-    padding: 0;
-    margin: 0;
+    margin: auto;
+    justify-content: space-between;
 }
 
-.colors>li {
+.test {
     width: 140px;
     height: 116px;
-    list-style-type: none;
-    margin: 4px;
     border-radius: 5px;
+    margin: 10px;
     position: relative;
 }
 
-q {
-    display: block;
-    border-radius: 0 0 5px 5px;
-}
-
-li em {
-    width: 100%;
-    line-height: 15px;
-    display: block;
+.test>em {
+    position: absolute;
+    bottom: 0;
     background-color: black;
-    color: #00CCCC;
-    opacity: .7;
+    color: wheat;
+    display: block;
+    width: 100%;
     border-radius: 0 0 5px 5px;
     padding: 1px;
-    position: absolute;
-    bottom: 0px;
     box-shadow: 0 -2px 7px 0;
 }
 
-li u::before {
+.test u::before {
     content: "RGB: ";
     font-style: normal;
 }
 
-li q::before {
+.test q::before {
     content: "HEX: ";
     font-style: normal;
 }
