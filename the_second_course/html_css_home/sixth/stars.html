@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 6d</title>
+
+    <style>
+        body {
+            margin: 0;
+        }
+        
+        .clearfix::after {
+            height: 0;
+            visibility: hidden;
+            clear: both;
+            display: block;
+            content: ".";
+        }
+        
+        .wrapper {
+            background-color: bisque;
+            width: fit-content;
+            margin: 0 auto;
+        }
+        
+        .item {
+            float: left;
+            width: 75px;
+            height: 77px;
+            background: url('http://fe.it-academy.by/Sites/0032698/starrs.png') no-repeat;
+            cursor: pointer;
+        }
+        
+        .wrapper:hover .item {
+            background-position: 0px -78px;
+        }
+        
+        .wrapper .item:hover~.item {
+            background-position: 0px 0px;
+        }
+    </style>
+</head>
+
+<div class="wrapper clearfix">
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+</div>
+
+</body>
+
+</html>

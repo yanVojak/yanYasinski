@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 6a</title>
+    <style>
+        .container div:not(:last-of-type) {
+            padding-bottom: 10px;
+        }
+        
+        a {
+            color: green;
+        }
+        
+        a:hover {
+            color: red;
+        }
+        /*                  menu1               */
+        
+        .menu1 a:not(:last-of-type) {
+            border-right: 2px solid red;
+            padding-right: 3px;
+        }
+        /*                  menu2               */
+        
+        .menu2>ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .menu2 ul>li {
+            display: inline;
+        }
+        
+        .menu2 li:not(:last-of-type) {
+            border-right: 2px solid red;
+            margin-right: 3px;
+        }
+        /*                  menu3              */
+        
+        .menu3 a:not(:last-of-type) {
+            padding-right: 6px;
+            background: url('http://fe.it-academy.by/Sites/0032690/line.gif') top right repeat-y;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+
+        <div class="menu1">
+
+            <a href="">first link</a>
+            <a href="">second link</a>
+            <a href="">third link</a>
+            <a href="">fourth link</a>
+
+        </div>
+
+
+
+        <div class="menu2">
+
+            <ul>
+                <li>
+                    <a href="">first link</a>
+                </li>
+                <li>
+                    <a href="">second link</a>
+                </li>
+                <li>
+                    <a href="">third link</a>
+                </li>
+                <li>
+                    <a href="">fourth link</a>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="menu3">
+
+            <a href="">first link</a>
+            <a href="">second link</a>
+            <a href="">third link</a>
+            <a href="">fourth link</a>
+
+        </div>
+
+
+    </div>
+</body>
+
+</html>

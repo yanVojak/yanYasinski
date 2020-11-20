@@ -3,22 +3,86 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>additional ask for a rubber border</title>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no, maximum-scale=1.0">
+    <!-- no change size of scale -->
+    <title>task 6c</title>
+
     <style>
-        .borderTest {
-            padding: 20px;
-            border: 38px solid transparent;
-            border-image: url("http://fe.it-academy.by/Sites/0031666/ramka.png") 118/ 123px 117px repeat;
-            /* we devide on three parts of image by default */
+        .name {
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+        
+        .birthday {
+            font-size: .9em;
+            color: green;
+        }
+        
+        .champion {
+            font-size: .9em;
+            color: red;
+            font-weight: bold;
+        }
+        
+        .info {
+            font-style: italic;
+            color: blue;
+            font-size: 14px;
+        }
+        
+        .link {
+            font-size: .9em;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        
+        p {
+            margin: 0;
+        }
+        
+        .info:last-of-type {
+            margin-bottom: 20px;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        /* a[href*='//']::before {
+            content: url('http://fe.it-academy.by/Sites/0031666/extref.png');
+            padding-right: 2px;
+        } */
+        
+        a[href*='//'] {
+            background: url('http://fe.it-academy.by/Sites/0031666/extref.png') left no-repeat;
+            padding-left: 12px;
+        }
+        
+        @media only print {
+            * {
+                color: black !important;
+            }
+            a[href*="//"]:last-of-type {
+                display: none;
+            }
+            a[href*="//"]:first-of-type {
+                padding-left: 0px;
+            }
         }
     </style>
 </head>
 
 <body>
-    <h1>border-image</h1>
-    <div class="borderTest">
-        <p style="margin: 0;">
+    <div class="wrapper ">
+
+
+        <p class="name " id="begin ">Гарри Каспаров</p>
+        <p class="birthday ">Дата рождения: 13 апреля 1963 г.</p>
+        <p class="champion ">Чемпион мира: 1985-1993</p>
+
+        <a href="https://chesspro.ru/statistic/kasparov.shtml " target="_blank ">Информация</a>
+
+        <p class="info ">
             Первый матч за звание чемпиона мира по шахматам Гарри Каспаров играл против чемпиона мира Анатолия Карпова. До этого они в разных официальных соревнованиях сыграли три партии, которые закончились вничью. Для победы требовалось первым выиграть 6 партий.
             Такой регламент был введён в феврале 1977 года и по нему прошли два матча Карпова с Корчным. Матч начался 10 сентября 1984 года в Москве. Уже после девятой партии Карпов вёл в счёте 4:0, и в последующих партиях Каспаров изменил тактику: он
             стал играть на ничью в каждой партии и вынуждать Карпова играть за другой цвет против своих любимых схем. Последовала серия из семнадцати ничьих, но двадцать седьмую партию снова выиграл Карпов, которому теперь оставалось одно очко до победы
@@ -26,15 +90,9 @@
             ФИДЕ Флоренсио Кампоманес на пресс-конференции объявил о прекращении матча, мотивировав это исчерпанием физических и психических ресурсов участников, и повторном матче между этими же соперниками в 1985 году. При этом и Карпов, и Каспаров выразили
             готовность продолжать матч; Каспаров на той же пресс-конференции обвинил Кампоманеса, что тот решил прервать матч только тогда, когда претендент получил шансы на победу.
         </p>
-    </div>
 
-    <br><br>
+        <a href="//something ">в начало страницы</a>
 
-    <div class="oneElse" style=" padding: 100px; background: url('http://fe.it-academy.by/Sites/0031666/lt.png') left top no-repeat, url('http://fe.it-academy.by/Sites/0031666/lb2.png') left bottom no-repeat, url('http://fe.it-academy.by/Sites/0031666/rt.png') right top no-repeat, url('http://fe.it-academy.by/Sites/0031666/rb.png') right bottom no-repeat, url('http://fe.it-academy.by/Sites/0031666/vert.png') left center repeat-y, url('http://fe.it-academy.by/Sites/0031666/vert.png') right center repeat-y, url('http://fe.it-academy.by/Sites/0031666/horizontal.png') top center repeat-x, url('http://fe.it-academy.by/Sites/0031666/bottom.png') bottom center repeat-x;">
-        <p style="margin: 0;">
-            Бериллий &mdash; элемент главной подгруппы второй группы, второго периода периодической системы химических элементов <span style="white-space: nowrap;">Д.
-                И. Менделеева</span>, с атомным номером 4. Обозначается символом Be <span style="white-space: nowrap;">(лат. Beryllium)</span>. Высокотоксичный элемент. Простое вещество бериллий &mdash; относительно твёрдый металл светло-серого цвета.
-        </p>
     </div>
 </body>
 

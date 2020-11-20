@@ -4,34 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>fifth</title>
+    <title>fifthAdittional</title>
     <style>
         body {
             margin: 0;
-        }
-        
-        .container {
-            background: url('http://fe.it-academy.by/Sites/0031666/line.gif') left top repeat-y, url('http://fe.it-academy.by/Sites/0031666/ball.png') right top repeat-y;
-        }
-        
-        .column {
-            width: 188px;
-            float: left;
-        }
-        
-        .information {
-            margin-left: 188px;
-            padding: 20px 5px 20px 20px;
-        }
-        
-        .information>img {
-            float: left;
-            margin-right: 14px;
-        }
-        
-        .information>h2 {
-            text-align: center;
-            margin-top: 0;
         }
         
         .special {
@@ -40,16 +16,33 @@
             color: #0000FF;
             margin: 0;
         }
+        
+        .main {
+            background: url('img/ball3.png') no-repeat, url('img/ball3.png') 100% 0 no-repeat, url('img/ball3.png') 100% 100% no-repeat, url('img/ball3.png') 0 100% no-repeat, url('img/20percent-1.gif') 20% top no-repeat, url('img/20percent-1.gif') 20% bottom no-repeat, url('img/2colors-1.gif') 20% repeat-y;
+        }
+        
+        .column {
+            float: left;
+            width: 20%;
+        }
+        
+        .information {
+            margin-left: 20%;
+        }
+        
+        .clearfix {
+            clear: both;
+        }
     </style>
 </head>
 
 
 <body>
     <h1 class="special">Hello everyone!</h1>
-    <div class="container">
+    <div class="main">
         <div class="column">
-            <p style="margin-left: 20px;">Types of sport:</p>
-            <ul>
+            <p style="margin-left: 20px; text-align: center;">Types of sport:</p>
+            <ul style="list-style-type: none; text-align: center; padding-left: 0;">
                 <li>
                     <a href="">skiing</a>
                 </li>
@@ -87,7 +80,7 @@
         </div>
 
         <div class="information">
-            <h2>Football</h2>
+            <h2 style="text-align: center; margin-top: 0; padding-top: 20px;">Football</h2>
             <img src="http://fe.it-academy.by/Examples/football.jpg" alt="champions hold a cup">
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis temporibus quas nostrum in dolorum. Commodi modi error doloremque rerum laudantium et neque quis ratione perferendis quidem accusantium, non voluptates necessitatibus.
@@ -98,10 +91,10 @@
                 dolor sit amet consectetur adipisicing elit. Voluptatibus maxime sequi fuga rerum vero alias officiis sapiente ullam dolore corporis molestiae sit quam numquam, quae ipsam consequuntur quod, veniam quibusdam! Lorem ipsum dolor sit amet
                 consectetur adipisicing elit. Consequatur repellendus, vel eius distinctio rerum quisquam sint quidem. Laudantium veniam ducimus, nemo odio quas, quia ut, possimus provident quis repellat harum!
             </p>
-            <div style="clear: both;"></div>
+            <div class="clearfix"></div>
         </div>
     </div>
-    <h1 class="special">The main thing is not victory</h1>
+    <h1 class="special ">The main thing is not victory</h1>
 </body>
 
 </html>
